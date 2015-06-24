@@ -1,0 +1,39 @@
+// OutlookAddinShim.idl 
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(3EC1157D-2358-47FA-AAEB-B1ED7326B8F4),
+	version(1.0),
+	helpstring("OutlookAddinShim 1.0 Type Library")
+]
+library OutlookAddinShimLib
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(338f40b4-0087-48ec-8284-0c3914243d73),
+		helpstring("ConnectProxy Class")
+	]
+	coclass ConnectProxy
+	{
+		[default] interface IUnknown;
+	};
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

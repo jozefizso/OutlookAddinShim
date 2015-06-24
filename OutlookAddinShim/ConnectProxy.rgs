@@ -1,0 +1,49 @@
+HKCR
+{
+	AcmeOutlookPlugin.AddIn = s 'Connect Class'
+	{
+		CLSID = s '{338f40b4-0087-48ec-8284-0c3914243d73}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove '{338f40b4-0087-48ec-8284-0c3914243d73}' = s 'AcmeOutlookPlugin.AddIn'
+		{
+			ProgID = s 'AcmeOutlookPlugin.AddIn'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			
+		}
+	}
+}
+
+HKCU
+{
+	NoRemove Software
+	{
+		NoRemove Microsoft
+		{
+			NoRemove Office
+			{
+				NoRemove Outlook
+				{
+					NoRemove Addins
+					{
+						ForceRemove AcmeOutlookPlugin.AddIn
+						{
+							val 'Description' = s 'AcmeOutlookAddIn (Description)'
+							val 'FriendlyName' = s 'Acme Outlook AddIn (Friendly Name)'
+							val 'LoadBehavior' = d 3
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
