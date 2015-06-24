@@ -88,7 +88,7 @@
       <OutputFile>$(OutDir)/OutlookAddinShim.dll</OutputFile>
       <ImportLibrary>$(OutDir)/OutlookAddinShim.lib</ImportLibrary>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <RegisterOutput>true</RegisterOutput>
+      <RegisterOutput>false</RegisterOutput>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -130,7 +130,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <RegisterOutput>true</RegisterOutput>
+      <RegisterOutput>false</RegisterOutput>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
