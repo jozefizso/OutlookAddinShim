@@ -1,4 +1,4 @@
-# MS Outlook Add-in Shim
+# Microsoft Outlook Add-in Shim
 
 > Shim library for isolating Microsoft Outlook Add-ins in managed code.
 
